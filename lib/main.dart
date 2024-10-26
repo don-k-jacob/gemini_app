@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:gemini_chat/const.dart';
-import 'package:gemini_chat/pages/home_page.dart';
+import 'package:gemini_chat/chat_page.dart';
 
 void main() {
   Gemini.init(apiKey: GEMINI_API_KEY);
@@ -16,10 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+ 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const ChatPage(),
     );
   }
 }
